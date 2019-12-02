@@ -21,6 +21,7 @@ variable "vault_cluster_name" {
 variable "vault_source_image" {
   description = "The Google Image used to launch each node in the Vault Server cluster. You can build this Google Image yourself at /examples/vault-consul-image."
   type        = string
+  default = "vault-consul-ubuntu18-5ddeaf35-a3d6-2605-b019-4006cc91fd3d"
 }
 
 variable "consul_server_cluster_name" {
@@ -31,6 +32,7 @@ variable "consul_server_cluster_name" {
 variable "consul_server_source_image" {
   description = "The Google Image used to launch each node in the Consul Server cluster. You can build this Google Image yourself at /examples/vault-consul-image."
   type        = string
+  default = "vault-consul-ubuntu18-5ddeaf35-a3d6-2605-b019-4006cc91fd3d"
 }
 
 # ---------------------------------------------------------------------------------------------------------------------
